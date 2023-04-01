@@ -34,7 +34,14 @@
             </div>
             <div class="form-group">
                 <label asp-for="Degree1" class="control-label"></label>
-                <input asp-for="Degree1" class="form-control" />
+                <select asp-for="Degree1" class="form-control">
+                    <option value="BS">B.S.</option>
+                    <option value="BA">B.A.</option>
+                    <option value="MS">M.S.</option>
+                    <option value="MA">M.A.</option>
+                    <option value="MBA">M.B.A.</option>
+                    <option value="PhD">PhD</option>
+                </select>
                 <span asp-validation-for="Degree1" class="text-danger"></span>
             </div>
             <div class="form-group">
@@ -42,21 +49,27 @@
                 <input asp-for="Major2" class="form-control" />
                 <span asp-validation-for="Major2" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Degree2" class="control-label"></label>
-                <input asp-for="Degree2" class="form-control" />
-                <span asp-validation-for="Degree2" class="text-danger"></span>
-            </div>
+            <select asp-for="Degree1" class="form-control">
+                <option value="BS">B.S.</option>
+                <option value="BA">B.A.</option>
+                <option value="MS">M.S.</option>
+                <option value="MA">M.A.</option>
+                <option value="MBA">M.B.A.</option>
+                <option value="PhD">PhD</option>
+            </select>
             <div class="form-group">
                 <label asp-for="Major3" class="control-label"></label>
                 <input asp-for="Major3" class="form-control" />
                 <span asp-validation-for="Major3" class="text-danger"></span>
             </div>
-            <div class="form-group">
-                <label asp-for="Degree3" class="control-label"></label>
-                <input asp-for="Degree3" class="form-control" />
-                <span asp-validation-for="Degree3" class="text-danger"></span>
-            </div>
+            <select asp-for="Degree1" class="form-control">
+                <option value="BS">B.S.</option>
+                <option value="BA">B.A.</option>
+                <option value="MS">M.S.</option>
+                <option value="MA">M.A.</option>
+                <option value="MBA">M.B.A.</option>
+                <option value="PhD">PhD</option>
+            </select>
             <div class="form-group">
                 <label asp-for="GraduationMonth" class="control-label"></label>
                 <input asp-for="GraduationMonth" class="form-control" />
@@ -102,7 +115,7 @@
             </div>
             <div class="form-group form-check">
                 <label class="form-check-label">
-                    <input class="form-check-input" asp-for="Active" /> @Html.DisplayNameFor(model => model.Active)
+                    <input class="form-check-input" asp-for="Active" checked/> @Html.DisplayNameFor(model => model.Active)
                 </label>
             </div>
             <div class="form-group">
