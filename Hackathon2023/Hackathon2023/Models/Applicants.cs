@@ -23,6 +23,13 @@ namespace Hackathon2023.Models
         public string? LinkedInURL { get; set; }
         public byte[]? Resume { get; set; }
         public bool Active { get; set; }
+        public string FullName
+        {
+            get
+            {
+                return FirstName + " " + LastName;
+            }
+        }
 
     }
 }

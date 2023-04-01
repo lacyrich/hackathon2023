@@ -49,7 +49,7 @@ namespace Hackathon2023.Controllers
         // GET: TagsApplicants/Create
         public IActionResult Create()
         {
-            ViewData["ApplicantID"] = new SelectList(_context.Applicants, "Id", "FirstName", "LastName");
+            ViewData["ApplicantID"] = new SelectList(_context.Applicants, "Id", "FullName");
             ViewData["TagID"] = new SelectList(_context.Tags, "Id", "TagName");
             return View();
         }
