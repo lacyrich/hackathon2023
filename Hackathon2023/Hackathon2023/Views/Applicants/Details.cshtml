@@ -1,0 +1,126 @@
+﻿@model Hackathon2023.Models.Applicants
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Applicants</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.EmailAddress)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Major1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Major1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Degree1)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Degree1)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Major2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Major2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Degree2)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Degree2)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Major3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Major3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Degree3)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Degree3)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GraduationMonth)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GraduationMonth)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GraduationYear)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GraduationYear)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.GPA)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.GPA)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.School)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.School)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.PositionType)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.PositionType)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.SponsorshipNeeded)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.SponsorshipNeeded)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.LinkedInURL)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.LinkedInURL)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Resume)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Resume)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Active)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Active)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
